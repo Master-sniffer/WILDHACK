@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/login_bg" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="217dp"
+            android:layout_marginLeft="85dp"
+            android:background="#ffffff"
+            app:srcCompat="@drawable/logowh" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="220dp"
+            android:width="200dp"
+            android:height="100dp"
+            android:text="Букашка"
+            android:textColor="@color/black"
+            android:textSize="34dp" />
+
+        <EditText
+            android:id="@+id/EmailText"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="333dp"
+            android:layout_height="54dp"
+            android:ems="10"
+            android:text="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/PasswordText"
+            android:layout_width="333dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginRight="50dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="Password" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="338dp"
+        android:layout_height="54dp"
+        android:layout_gravity="start"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="189dp"
+        android:backgroundTint="#000000"
+        android:enabled="false"
+        android:text="Вход"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="338dp"
+        android:layout_height="54dp"
+        android:layout_gravity="start"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="129dp"
+        android:backgroundTint="@color/teal_700"
+        android:enabled="false"
+        android:text="Регистрация"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
