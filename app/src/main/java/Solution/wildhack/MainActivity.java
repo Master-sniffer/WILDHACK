@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import Models.CustomerModel;
+
 public class MainActivity extends AppCompatActivity {
 
     Button bt1,bt2;
@@ -53,7 +55,10 @@ public class MainActivity extends AppCompatActivity {
                 boolean b = databaseHelper.AddOne(customerModel);
                 Toast.makeText(MainActivity.this,"Result "  + b, Toast.LENGTH_SHORT).show();
                 ShowCustomers(databaseHelper);
-            }
+
+
+                    }
+
 
 
         });

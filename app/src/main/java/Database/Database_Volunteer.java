@@ -1,26 +1,35 @@
 package Database;
 
-import android.content.ContentValues;
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import Solution.wildhack.CustomerModel;
-
 
 public class Database_Volunteer extends SQLiteOpenHelper {
 
-    public static final String CUSTOMER_TABLE = "VOLUNTEER";
-    public static final String CUSTOMER_NAME = "CUSTOMER_NAME";
-    public static final String CUSTOMER_AGE = "CUSTOMER_AGE";
-    public static final String ACTIVE_CUSTOMER = "ACTIVE_CUSTOMER";
-    public static final String ID = "ID";
+    public static final String TABLE = "VOLUNTEER";
+
+    public static final String VOL_ID = "VOL_ID";
+    public static final String VOL_NAME = "VOL_NAME";
+    public static final String VOL_SURNAME = "VOL_SURNAME";
+    public static final String VOL_MIDDLENAME = "VOL_MIDDLENAME";
+
+    public static final String VOL_DATEOFBIRTH = "VOL_DATEOFBIRTH";
+    public static final String VOL_EMAIL = "VOL_EMAIL";
+    public static final String VOL_TELEPHONE = "VOL_TELEPHONE";
+
+    public static final String VOL_SOCIALNETWORK = "VOL_SOCIALNETWORK";
+    public static final String VOL_PLACE_WHERE_LIVES = "VOL_PLACE_WHERE_LIVES";
+
+    public static final String VOL_EXPERIENCE = "VOL_EXPERIENCE";
+    public static final String VOL_ACTIONS = "VOL_ACTIONS";
+
+    public static final String VOL_FAR_AWAY = "VOL_FAR_AWAY";
+
+
+
 
     public Database_Volunteer(@Nullable Context context) {
         super(context, "VOLUNTEER.db", null, 1);
@@ -28,71 +37,17 @@ public class Database_Volunteer extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String createTableStatement = "CREATE TABLE " + CUSTOMER_TABLE + " (" + ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + CUSTOMER_NAME + " TEXT , " + CUSTOMER_AGE + " INT , " + ACTIVE_CUSTOMER + " BOOL )";
-
+        String createTableStatement = "CREATE TABLE " + TABLE + " (" + VOL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + VOL_NAME + " TEXT , " + VOL_SURNAME + " TEXT , " + VOL_MIDDLENAME + " TEXT , " + VOL_DATEOFBIRTH + " TEXT , " +
+                  VOL_EMAIL + " TEXT , " + VOL_TELEPHONE + " TEXT , " + VOL_SOCIALNETWORK + " TEXT , " + VOL_PLACE_WHERE_LIVES + " TEXT , " + VOL_EXPERIENCE + " TEXT ,  " + VOL_ACTIONS + " TEXT , " + VOL_FAR_AWAY + " TEXT )";
         db.execSQL(createTableStatement);
     }
+    // String createTableStatement = "CREATE TABLE " + CUSTOMER_TABLE + " (" + VOL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + CUSTOMER_NAME + " TEXT , " + CUSTOMER_AGE + " INT , " + ACTIVE_CUSTOMER + " BOOL )";
+
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
 
-    public boolean AddOne (CustomerModel customerModel){
-
-        SQLiteDatabase database = this.getWritableDatabase();
-        ContentValues cv = new ContentValues();
-
-        cv.put( CUSTOMER_NAME , customerModel.getName());
-        cv.put(CUSTOMER_AGE, customerModel.getAge());
-        cv.put(ACTIVE_CUSTOMER, customerModel.getActive());
-
-        long insert = database.insert(CUSTOMER_TABLE, null, cv);
-        if (insert==-1){
-            return false;
-        } else {
-            return true;
-        }
-
-    }
-
-    public boolean deleteOne(CustomerModel customerModel){
-        SQLiteDatabase db = this.getWritableDatabase();
-        String query = "DELETE FROM "+CUSTOMER_TABLE + " WHERE " +  ID + " = " + customerModel.getID() ;
-        Cursor cursor = db.rawQuery(query, null);
-        return cursor.moveToFirst();
-    }
-
-
-    public List<CustomerModel> getEveryone(){
-        List<CustomerModel> returnlist = new ArrayList<>();
-
-        String query = "SELECT  * FROM " + CUSTOMER_TABLE;
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        Cursor cursor = db.rawQuery(query, null);
-        if (cursor.moveToFirst()){
-            do{
-                int customerID = cursor.getInt(0);
-                String customerName = cursor.getString(1);
-                int customerAge = cursor.getInt(2);
-                boolean isactive = cursor.getInt(3) == 1 ?  true: false ;
-
-                CustomerModel customerModel = new CustomerModel(customerID,customerName, customerAge, isactive);
-                returnlist.add(customerModel);
-
-
-            } while (cursor.moveToNext() );
-
-
-
-        } else {
-
-        }
-        cursor.close();
-        db.close();
-
-        return returnlist;
-    }
-
+    //public boolean InsertValues ()
 }

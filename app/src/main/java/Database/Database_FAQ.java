@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-import Solution.wildhack.CustomerModel;
+import Models.CustomerModel;
 
 public class Database_FAQ extends SQLiteOpenHelper {
 

@@ -1,4 +1,4 @@
-package Solution.wildhack;
+package Models;
 
 public class CustomerModel {
 

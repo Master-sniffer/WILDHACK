@@ -5,11 +5,14 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import Models.CustomerModel;
 
 public class DatabaseHelper extends SQLiteOpenHelper  {
 
@@ -46,6 +49,8 @@ public class DatabaseHelper extends SQLiteOpenHelper  {
         cv.put(ACTIVE_CUSTOMER, customerModel.getActive());
 
         long insert = database.insert(CUSTOMER_TABLE, null, cv);
+
+        Log.i("SQL", String.valueOf(customerModel.getName()));
         if (insert==-1){
             return false;
         } else {
