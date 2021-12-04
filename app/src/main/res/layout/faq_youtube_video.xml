@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="72dp"
+            android:width="200dp"
+            android:height="50dp"
+            android:text="FAQ"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="34dp" />
+
+
+        <EditText
+            android:background="#dedede"
+            android:layout_width="400dp"
+            android:layout_height="36dp"
+            android:id="@+id/search"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="126dp"
+            android:layout_marginRight="16dp"
+            android:textColor="#999999"
+            android:ems="100"
+            android:inputType="text"
+            android:text="Как подать заявку?" />
+
+        <TextView
+            android:id="@+id/covid"
+            android:background="#dedede"
+            android:textColor="#999999"
+            android:layout_width="80dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="172dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="covid-19" />
+
+        <TextView
+            android:id="@+id/web"
+            android:background="#dedede"
+            android:textColor="#999999"
+            android:layout_width="80dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="106dp"
+            android:layout_marginTop="172dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="Интернет" />
+
+        <TextView
+            android:id="@+id/howtofind"
+            android:background="#dedede"
+            android:textColor="#999999"
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="196dp"
+            android:layout_marginTop="172dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="Как добраться до Камчатки" />
+
+        <TextView
+            android:id="@+id/answerfound"
+            android:textColor="#999999"
+            android:layout_width="300dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="455dp"
+            android:textSize="14dp"
+            android:text="Фильм Юрия Дудя" />
+
+        <TextView
+            android:id="@+id/answer"
+            android:textColor="#000000"
+            android:layout_width="500dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="435dp"
+            android:textSize="16dp"
+            android:text="Главное о Камчатке" />
+
+
+        <TextView
+            android:id="@+id/headline"
+            android:textColor="#000000"
+            android:layout_width="500dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="484dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            android:text="Подборка популярных руководств:" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/maxresdefault"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="229dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="515dp"
+            app:srcCompat="@drawable/kin_li_xvp14wwqz9s_unsplash" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="205dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="515dp"
+            app:srcCompat="@drawable/rectangle_2" />
+
+        <TextView
+            android:id="@+id/lifehack1"
+            android:textColor="#FFFFFF"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="515dp"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Самые необходимые вещи" />
+
+        <TextView
+            android:id="@+id/lifehack2"
+            android:textColor="#000000"
+            android:layout_width="120dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="515dp"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Как правильно фотографировать животных для отчёта" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
