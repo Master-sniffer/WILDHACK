@@ -1,7 +1,11 @@
 package Solution.wildhack;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,12 +18,24 @@ public class MainActivity extends AppCompatActivity {
 //    ArrayAdapter customerArray;
 //    DatabaseHelper databaseHelper;
 
+    EditText EmailText, PasswordText;
+    Button register, login;
+
 
     @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
+    }
+
+    public void onMyButtonClick(View view){
+
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        intent.putExtra("EXTRA_MESSAGE", "SWITCHIN");
+        startActivity(intent);
+    }
+
 
 //        bt1 = findViewById(R.id.bt1);
 //        bt2 = findViewById(R.id.bt2);
@@ -95,8 +111,6 @@ public class MainActivity extends AppCompatActivity {
 //                "да\n" +
 //                "пока\n";
 //
-////        Tests.tests(files);
-////        Tests.tests(flows);
 //
 //
 //    }
@@ -105,5 +119,5 @@ public class MainActivity extends AppCompatActivity {
 //        customerArray = new ArrayAdapter<CustomerModel>(MainActivity.this, android.R.layout.simple_list_item_1, databaseHelper2.getEveryone());
 //        customer_list.setAdapter(customerArray);
 //    }
-    }
+
 }

@@ -5,7 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login.LoginActivity">
+    tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -13,11 +13,11 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_marginTop="330dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginRight="50dp"
             app:srcCompat="@drawable/login_bg" />
 
         <ImageView
@@ -49,8 +49,8 @@
             android:layout_marginTop="330dp"
             android:layout_marginRight="50dp"
             android:ems="10"
-            android:inputType="textEmailAddress"
-            android:text="Email" />
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/PasswordText"
@@ -74,7 +74,8 @@
         android:layout_marginRight="26dp"
         android:layout_marginBottom="139dp"
         android:backgroundTint="#000000"
-        android:enabled="false"
+        android:enabled="true"
+        android:onClick="onMyButtonClick"
         android:text="Вход"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"

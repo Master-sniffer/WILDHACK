@@ -1,4 +1,4 @@
-package Solution.wildhack;
+package Database;
 
 import android.content.ContentValues;
 import android.content.Context;
