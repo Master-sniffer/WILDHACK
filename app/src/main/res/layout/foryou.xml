@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="142dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:srcCompat="@drawable/resource__" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:width="200dp"
+            android:height="50dp"
+            android:text="Для Вас"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="34dp" />
+
+
+        <EditText
+            android:background="#dedede"
+            android:layout_width="400dp"
+            android:layout_height="36dp"
+            android:id="@+id/search"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="86dp"
+            android:layout_marginRight="16dp"
+            android:textColor="#999999"
+            android:ems="100"
+            android:inputType="text"
+            android:text="Заметки, руководства..." />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_marginTop="562dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/__" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
