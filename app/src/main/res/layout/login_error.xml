@@ -5,7 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login.LoginActivity">
+    tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -88,7 +88,7 @@
         android:layout_marginRight="26dp"
         android:layout_marginBottom="139dp"
         android:backgroundTint="#000000"
-        android:enabled="false"
+        android:enabled="true"
         android:text="Вход"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -105,7 +105,7 @@
         android:layout_marginRight="26dp"
         android:layout_marginBottom="79dp"
         android:backgroundTint="@color/teal_700"
-        android:enabled="false"
+        android:enabled="true"
         android:text="Регистрация"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"

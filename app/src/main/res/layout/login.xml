@@ -60,7 +60,7 @@
             android:layout_marginTop="370dp"
             android:layout_marginRight="50dp"
             android:ems="10"
-            android:hint="Password"
+            android:hint="Passsword"
             android:inputType="textEmailAddress" />
 
     </RelativeLayout>
@@ -91,7 +91,7 @@
         android:layout_marginRight="26dp"
         android:layout_marginBottom="79dp"
         android:backgroundTint="@color/teal_700"
-        android:enabled="false"
+        android:enabled="true"
         android:text="Регистрация"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"

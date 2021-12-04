@@ -5,7 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login.LoginActivity">
+    tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -35,17 +35,17 @@
 
 
         <EditText
-            android:background="#dedede"
+            android:id="@+id/search"
             android:layout_width="400dp"
             android:layout_height="36dp"
-            android:id="@+id/search"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="86dp"
             android:layout_marginRight="16dp"
-            android:textColor="#999999"
+            android:background="#dedede"
             android:ems="100"
             android:inputType="text"
-            android:text="Заметки, руководства..." />
+            android:text="Заметки, руководства..."
+            android:textColor="#999999" />
 
         <ImageView
             android:id="@+id/imageView7"
