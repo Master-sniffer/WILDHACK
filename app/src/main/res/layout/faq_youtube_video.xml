@@ -107,7 +107,7 @@
             android:textSize="20dp"
             android:textStyle="bold"
 
-            android:text="Подборка популярных руководств:" />
+            android:text="Подборка популярных руководств ->" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -139,9 +139,9 @@
         <TextView
             android:id="@+id/lifehack1"
             android:textColor="#FFFFFF"
-            android:layout_width="100dp"
+            android:layout_width="120dp"
             android:layout_height="200dp"
-            android:layout_marginLeft="55dp"
+            android:layout_marginLeft="47dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="515dp"
             android:gravity="center"
