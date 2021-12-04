@@ -1,4 +1,4 @@
-package Solution.wildhack;
+package Database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -11,17 +11,19 @@ import androidx.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DatabaseHelper extends SQLiteOpenHelper  {
+import Solution.wildhack.CustomerModel;
 
 
-    public static final String CUSTOMER_TABLE = "CUSTOMER_TABLE";
+public class Database_Volunteer extends SQLiteOpenHelper {
+
+    public static final String CUSTOMER_TABLE = "VOLUNTEER";
     public static final String CUSTOMER_NAME = "CUSTOMER_NAME";
     public static final String CUSTOMER_AGE = "CUSTOMER_AGE";
     public static final String ACTIVE_CUSTOMER = "ACTIVE_CUSTOMER";
     public static final String ID = "ID";
 
-    public DatabaseHelper(@Nullable Context context) {
-        super(context, "customer.db", null, 1);
+    public Database_Volunteer(@Nullable Context context) {
+        super(context, "VOLUNTEER.db", null, 1);
     }
 
     @Override
@@ -52,23 +54,13 @@ public class DatabaseHelper extends SQLiteOpenHelper  {
             return true;
         }
 
-
     }
 
     public boolean deleteOne(CustomerModel customerModel){
         SQLiteDatabase db = this.getWritableDatabase();
-//         String query = "DELETE FROM "+CUSTOMER_TABLE + " WHERE " +  ID + " = " + customerModel.getID() ;
-//        Cursor cursor = db.rawQuery(query, null);
-//        if (cursor.moveToFirst()){
-//            return true;
-//        }else {
-//            return false;
-//        }
-        ContentValues cv = new ContentValues();
-        cv.put(ID, customerModel.getID());
-        cv.put(CUSTOMER_NAME, "Abobus");
-        int update = db.update(CUSTOMER_TABLE, cv, "ID = ?", new String[]{Integer.toString(customerModel.getID())});
-        return (update)>0? true:false;
+        String query = "DELETE FROM "+CUSTOMER_TABLE + " WHERE " +  ID + " = " + customerModel.getID() ;
+        Cursor cursor = db.rawQuery(query, null);
+        return cursor.moveToFirst();
     }
 
 
@@ -102,4 +94,5 @@ public class DatabaseHelper extends SQLiteOpenHelper  {
 
         return returnlist;
     }
+
 }
