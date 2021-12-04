@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView9"
@@ -11,7 +12,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/layout_margin_right"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -19,7 +21,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/layout_margin_right"
         tools:layout_editor_absoluteX="395dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/register"
@@ -30,7 +33,7 @@
         android:layout_marginRight="26dp"
         android:layout_marginBottom="139dp"
         android:backgroundTint="@color/teal_700"
-        android:enabled="false"
+        android:enabled="true"
         android:text="Подать заявку"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,7 +50,7 @@
         android:layout_marginRight="26dp"
         android:layout_marginBottom="79dp"
         android:backgroundTint="@color/black"
-        android:enabled="false"
+        android:enabled="true"
         android:text="Изменить данные в профиле"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -61,7 +64,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/bitmap__1_"
         tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="267dp" />
+        tools:layout_editor_absoluteY="267dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -69,7 +73,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/bitmap"
         tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="402dp" />
+        tools:layout_editor_absoluteY="402dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/answerfound"
@@ -79,7 +84,8 @@
         android:textColor="#999999"
         android:textSize="14dp"
         tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="315dp" />
+        tools:layout_editor_absoluteY="315dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/answerfound1"
@@ -90,7 +96,8 @@
         android:textSize="14dp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="55dp" />
+        tools:layout_editor_absoluteY="55dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/answer"
@@ -101,7 +108,8 @@
         android:textSize="16dp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="267dp" />
+        tools:layout_editor_absoluteY="267dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/answer2"
@@ -112,7 +120,8 @@
         android:textSize="16dp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="402dp" />
+        tools:layout_editor_absoluteY="402dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/answer3"
@@ -122,7 +131,8 @@
         android:textColor="#999999"
         android:textSize="14dp"
         tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="430dp" />
+        tools:layout_editor_absoluteY="430dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
@@ -136,6 +146,7 @@
         android:textSize="34dp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="166dp" />
+        tools:layout_editor_absoluteY="166dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

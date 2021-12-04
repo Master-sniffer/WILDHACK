@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/WILDHACK_FUCK_1/app/src/main/res/layout/activity_main.xml" value="0.22010869565217392" />
+        <entry key="..\:/WILDHACK_FUCK_1/app/src/main/res/layout/faq.xml" value="0.3736979166666667" />
+        <entry key="..\:/WILDHACK_FUCK_1/app/src/main/res/layout/faq_youtube_video.xml" value="0.22010869565217392" />
+        <entry key="..\:/WILDHACK_FUCK_1/app/src/main/res/layout/foryou.xml" value="0.264" />
+        <entry key="..\:/WILDHACK_FUCK_1/app/src/main/res/layout/login.xml" value="0.264" />
+        <entry key="..\:/WILDHACK_FUCK_1/app/src/main/res/layout/login_error.xml" value="0.22010869565217392" />
+        <entry key="..\:/WILDHACK_FUCK_1/app/src/main/res/layout/login_with_keyboard.xml" value="0.22010869565217392" />
+        <entry key="..\:/WILDHACK_FUCK_1/app/src/main/res/layout/onboarding.xml" value="0.22010869565217392" />
+        <entry key="..\:/WILDHACK_FUCK_1/app/src/main/res/layout/selectone.xml" value="0.22010869565217392" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.4904891304347826" />
         <entry key="app/src/main/res/layout/foryou.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/layout/login.xml" value="0.35572916666666665" />

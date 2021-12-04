@@ -5,7 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login.LoginActivity">
+    tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -26,29 +26,29 @@
 
 
         <EditText
-            android:background="#dedede"
+            android:id="@+id/search"
             android:layout_width="400dp"
             android:layout_height="36dp"
-            android:id="@+id/search"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="126dp"
             android:layout_marginRight="16dp"
-            android:textColor="#999999"
+            android:background="#dedede"
             android:ems="100"
+            android:hint="Как подать заявку?"
             android:inputType="text"
-            android:text="Как подать заявку?" />
+            android:textColor="#999999" />
 
         <TextView
             android:id="@+id/covid"
-            android:background="#dedede"
-            android:textColor="#999999"
             android:layout_width="80dp"
             android:layout_height="36dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="172dp"
+            android:background="#dedede"
             android:gravity="center"
+            android:text="covid-19"
             android:textAlignment="center"
-            android:text="covid-19" />
+            android:textColor="#999999" />
 
         <TextView
             android:id="@+id/web"
