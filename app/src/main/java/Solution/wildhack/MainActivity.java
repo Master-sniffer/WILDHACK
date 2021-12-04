@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,24 +18,27 @@ public class MainActivity extends AppCompatActivity {
 //    ArrayAdapter customerArray;
 //    DatabaseHelper databaseHelper;
 
-    EditText EmailText, PasswordText;
-    Button register, login;
+    TextView textView4;
+    Button login;
 
 
     @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.onboarding);
     }
 
-    public void onMyButtonClick(View view){
+    public void Vhod_On_Boarding(View view){
 
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
-        intent.putExtra("EXTRA_MESSAGE", "SWITCHIN");
+        Intent intent = new Intent(this, Enter_Or_Logi.class);
         startActivity(intent);
     }
 
+    public void Another_Enter (View view){
+        Intent intent = new Intent(this, Enter_Or_Logi.class);
+        startActivity(intent);
+    }
 
 //        bt1 = findViewById(R.id.bt1);
 //        bt2 = findViewById(R.id.bt2);
