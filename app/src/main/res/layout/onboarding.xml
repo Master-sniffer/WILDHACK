@@ -31,15 +31,15 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:textColor="@color/white"
-            android:textSize="34dp"
-            android:height="100dp"
-            android:width="200dp"
-            android:layout_marginTop="270dp"
-            android:layout_marginLeft="160dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Букашка" />
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="270dp"
+            android:width="200dp"
+            android:height="100dp"
+            android:text="Букашка"
+            android:textColor="@color/white"
+            android:textSize="34dp" />
 
         <TextView
             android:id="@+id/textView3"
