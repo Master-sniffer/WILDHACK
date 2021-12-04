@@ -82,6 +82,17 @@
         tools:layout_editor_absoluteY="315dp" />
 
     <TextView
+        android:id="@+id/answerfound1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="Назад"
+        android:textColor="@color/back"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <TextView
         android:id="@+id/answer"
         android:layout_width="230dp"
         android:layout_height="150dp"
@@ -104,7 +115,7 @@
         tools:layout_editor_absoluteY="402dp" />
 
     <TextView
-        android:id="@+id/answerfound"
+        android:id="@+id/answer3"
         android:layout_width="250dp"
         android:layout_height="100dp"
         android:text="Информация передается, обрабатывается и хранится в соответствии с законодательством РФ"
