@@ -122,7 +122,7 @@
             android:id="@+id/imageView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="515dp"
             app:srcCompat="@drawable/kin_li_xvp14wwqz9s_unsplash" />
@@ -131,9 +131,9 @@
             android:id="@+id/imageView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="205dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginLeft="220dp"
             android:layout_marginTop="515dp"
+            android:layout_marginRight="20dp"
             app:srcCompat="@drawable/rectangle_2" />
 
         <TextView
@@ -141,7 +141,7 @@
             android:textColor="#FFFFFF"
             android:layout_width="120dp"
             android:layout_height="200dp"
-            android:layout_marginLeft="47dp"
+            android:layout_marginLeft="43dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="515dp"
             android:gravity="center"
@@ -152,9 +152,9 @@
         <TextView
             android:id="@+id/lifehack2"
             android:textColor="#000000"
-            android:layout_width="120dp"
+            android:layout_width="140dp"
             android:layout_height="200dp"
-            android:layout_marginLeft="230dp"
+            android:layout_marginLeft="236dp"
             android:layout_marginTop="515dp"
             android:gravity="center"
             android:textSize="16dp"
