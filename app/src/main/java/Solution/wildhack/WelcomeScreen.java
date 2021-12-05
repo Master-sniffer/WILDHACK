@@ -18,6 +18,7 @@ import java.util.Arrays;
 import java.util.Locale;
 
 public class WelcomeScreen extends AppCompatActivity {
+    public static String[] EXTRA_MESSAGE;
 
     Button Dle_Vas_Wel, Zametki_Wel, FAQ_Wel, SOS_Wel, Eshe_Wel;
 
@@ -31,17 +32,27 @@ public class WelcomeScreen extends AppCompatActivity {
         editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                Look_For(editText.getText().toString());
-                //Change();
+                EXTRA_MESSAGE = Look_For(editText.getText().toString());
+                Change(EXTRA_MESSAGE);
                 return true;
             }
         });
+    }
+
+
+    public void Change(String[] output) {
+        Intent intent = new Intent(this, Answer_App.class);
+//        String message = editText.getText().toString();
+//        intent.putExtra(EXTRA_MESSAGE);
+        startActivity(intent);
     }
 
     public void zametki_wel(View view) {
         Intent intent = new Intent(this, Enter_Or_Logi.class);
         startActivity(intent);
     }
+
+
 
     public void faq_wel(View view) {
         boolean connected = false;
@@ -50,12 +61,11 @@ public class WelcomeScreen extends AppCompatActivity {
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
             //we are connected to a network
             connected = true;
-        } else {
-            connected = false;
         }
 
 
         Log.i("Connection", String.valueOf(connected));
+
 
         if (connected == true) {
             Intent intent = new Intent(this, FAQ_INTERNET.class);
@@ -64,6 +74,7 @@ public class WelcomeScreen extends AppCompatActivity {
             Intent intent = new Intent(this, FAQ_OFFLINE.class);
             startActivity(intent);
         }
+
     }
 
     public void sos_wel(View view) {
@@ -77,15 +88,10 @@ public class WelcomeScreen extends AppCompatActivity {
     }
 
 
-    public void Change() {
-//        Intent intent = new Intent(this, Enter_Or_Logi.class);
-//        startActivity(intent);
-    }
+
+    public String[] Look_For(String question) {
 
 
-    public void Look_For(String question) {
-
-        {
 
             String[][] matrix = //двумерный массив всех вариантов
                     {
@@ -94,7 +100,7 @@ public class WelcomeScreen extends AppCompatActivity {
                             {"договор", "деятельность", "добровольческой", "деятельности", "обработка", "персональных", "данныхотбор", "подтверждение", "свободных", "мест", "график", "набора", "техническое", "задание"},
                             {"сроки", "дедлайн", "дедлайны", "волонтерская", "работа", "волонтерские", "работы", "постановка", "в", "график", "график", "работа"},
                             {"подготовка", "к", "путешествию", "подготовка", "инвентаря", "инвентарь", "взять", "снаряжение", "одежда", "обувь", "спальник", "коврик", "фонарик", "термос", "посуда"},
-                            {"связь", "интернет", "электричество"},
+                            {"связь", "интернет", "электричество","кордон"},
                             {"прививка", "прививках", "прививки", "справки", "справка", "справках", "здоровье", "здоровья", "здоров", "пцр", "covid-19", "короновирус", "аптечка", "жизнь", "опасность", "опасно", "животные"},
                             {"питание", "продукты", "продуктами", "питания", "пайком", "пайек", "фрукты", "овощи", "кондитерские", "изделия", "молочные", "продукты"},
                             {"проживание", "условия", "жилье", "жить", "туалет", "душ", "сушить", "стирать", "палатки", "инфраструктура", "стирки", "стирка", "сушка"},
@@ -162,9 +168,26 @@ public class WelcomeScreen extends AppCompatActivity {
                             "Выдается личная волонтерская книжка(при отсутствии),с отметкой о дате и сведениях о деятельности волонтера.",
             };
 
-            String jav= "Где и как можно узнать точную\\n\" +\n" +
-                    "                    \"дату вылета на кордон?";
-            //String question = ; //тут будет типа ввод вопроса пользователем
+            String[] tema = new String[]{
+                    "Подача заявки",
+                    "Регистрация на сайте «Добровольцы России»",
+                    "Договор о добровольческой деятельности для ознакомления",
+                    "Постановка в график",
+                    "Подготовка к путешествию",
+                    "Связь и электричество",
+                    "Здоровье",
+                    "Питание",
+                    "Проживание и условия",
+                    "Подписание договора",
+                    "Отправка",
+                    "Ожидание отправки",
+                    "Работа на территориях",
+                    "Отзыв,отчет о проделанных работах",
+
+            };
+
+//            String question = "Где и как можно узнать точную\n" +
+//                    "дату вылета на кордон?"; //тут будет типа ввод вопроса пользователем
 
 
             String[] strToArray = question.toLowerCase(Locale.ROOT).split(" "); //сплитим для создания массива строк, так удобнее сравнивать
@@ -172,6 +195,7 @@ public class WelcomeScreen extends AppCompatActivity {
 
             System.out.println(Arrays.toString(strToArray));
             String[] Counter = new String[1];
+            String[] Temas = new String[1];
             for (int row = 0; row < matrix.length; row++) {
                 for (int col = 0; col < matrix[row].length; col++) {
                     String value = matrix[row][col];
@@ -183,12 +207,16 @@ public class WelcomeScreen extends AppCompatActivity {
                             Counter[0] = null;
                             Counter[0] = answers[ans];
 //                        System.out.println(ans);
+                            Temas[0] = tema[ans];
 
                         }
                     }
                 }
             }
+            System.out.println("ТЕМА: " + Temas[0]);
             System.out.println("ОТВЕТ: " + Counter[0]);
+            String [] output ={Temas[0], Counter[0]};
+            return output;
         }
     }
-}
+

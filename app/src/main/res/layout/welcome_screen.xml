@@ -43,8 +43,8 @@
             android:layout_marginRight="16dp"
             android:background="#dedede"
             android:ems="100"
+            android:hint="Заметки, руководства..."
             android:inputType="text"
-            android:text="Заметки, руководства..."
             android:textColor="#999999"
             tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
@@ -109,9 +109,9 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="103dp"
             android:layout_marginBottom="-2dp"
-            android:src="@drawable/sosicon"
             android:clickable="true"
-            android:onClick="sos_wel"/>
+            android:onClick="sos_wel"
+            android:src="@drawable/sosicon" />
 
         <ImageButton
             android:id="@+id/Eshe_Wel"
