@@ -107,7 +107,6 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="19dp"
             android:layout_marginBottom="473dp"
-            android:backgroundTint="#000000"
             android:text="Настройки приложения" />
 
         <Button
@@ -118,7 +117,6 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="19dp"
             android:layout_marginBottom="411dp"
-            android:backgroundTint="#000000"
             android:text="Поделиться приложением" />
 
         <Button
@@ -129,7 +127,6 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="19dp"
             android:layout_marginBottom="347dp"
-            android:backgroundTint="#000000"
             android:text="О приложении" />
 
 
