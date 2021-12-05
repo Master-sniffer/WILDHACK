@@ -99,8 +99,8 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="177dp"
             android:layout_marginBottom="-2dp"
-            android:onClick="faq_wel"
             android:clickable="true"
+            android:onClick="faq_wel"
             android:src="@drawable/faqicon" />
 
         <ImageButton

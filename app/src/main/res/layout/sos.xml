@@ -75,13 +75,14 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/search"
+            android:id="@+id/search_sos"
             android:layout_width="400dp"
             android:layout_height="36dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="146dp"
             android:layout_marginRight="16dp"
             android:background="#dedede"
+            android:clickable="true"
             android:ems="100"
             android:hint="Интернет на Камчатке"
             android:inputType="text"

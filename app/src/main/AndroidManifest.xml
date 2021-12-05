@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WildHack">
         <activity
+            android:name=".SOS"
+            android:exported="false" />
+        <activity
             android:name=".SelectOne"
             android:exported="false" />
         <activity

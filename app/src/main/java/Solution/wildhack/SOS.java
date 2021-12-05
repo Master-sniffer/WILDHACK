@@ -3,24 +3,21 @@ package Solution.wildhack;
 import static Solution.wildhack.WelcomeScreen.Look_For;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class FAQ_INTERNET extends AppCompatActivity {
-
+public class SOS extends AppCompatActivity {
     public static String[] EXTRA_MESSAGE;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.faq_youtube_video);
+        setContentView(R.layout.sos);
 
 
         try {
@@ -41,15 +38,12 @@ public class FAQ_INTERNET extends AppCompatActivity {
 
     }
 
+
     public void Change(String[] output) {
         Intent intent = new Intent(this, Answer_App.class);
         startActivity(intent);
     }
 
-    public void Go_To_Youtube (View view){
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=Zv4hIaVvFVI&ab_channel=вДудь"));
-        startActivity(browserIntent);
-    }
 
 
 }

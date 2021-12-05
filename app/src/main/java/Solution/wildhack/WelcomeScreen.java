@@ -100,7 +100,7 @@ public class WelcomeScreen extends AppCompatActivity {
 
 
 
-    public String[] Look_For(String question) {
+    public static String[] Look_For(String question) {
 
 
 
