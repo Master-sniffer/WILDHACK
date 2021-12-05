@@ -201,7 +201,9 @@
             android:layout_marginBottom="72dp"
             android:backgroundTint="#F44336"
             android:text="112"
-            app:icon="@drawable/callicon" />
+            app:icon="@drawable/callicon"
+            android:autoLink="phone"
+            />
 
         <ImageView
             android:id="@+id/imageView13"

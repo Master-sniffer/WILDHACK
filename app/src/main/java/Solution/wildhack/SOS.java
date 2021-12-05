@@ -3,6 +3,7 @@ package Solution.wildhack;
 import static Solution.wildhack.WelcomeScreen.Look_For;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -43,4 +44,10 @@ public class SOS extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+    public void Call (){
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:112"));
+        startActivity(intent);
+    }
 }
