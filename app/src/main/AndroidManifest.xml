@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WildHack">
         <activity
+            android:name=".FAQ_OFFLINE"
+            android:exported="false" />
+        <activity
             android:name=".WelcomeScreen"
             android:exported="false" />
         <activity
