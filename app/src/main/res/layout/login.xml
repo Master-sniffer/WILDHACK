@@ -5,7 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Enter_Or_Login">
+    tools:context=".Enter_Or_Logi">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -61,7 +61,8 @@
             android:layout_marginRight="50dp"
             android:ems="10"
             android:hint="Passsword"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:password="true" />
 
     </RelativeLayout>
 
@@ -74,7 +75,9 @@
         android:layout_marginRight="26dp"
         android:layout_marginBottom="139dp"
         android:backgroundTint="#000000"
+        android:clickable="true"
         android:enabled="true"
+        android:onClick="Login"
         android:text="Вход"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -91,7 +94,9 @@
         android:layout_marginRight="26dp"
         android:layout_marginBottom="79dp"
         android:backgroundTint="@color/teal_700"
+        android:clickable="true"
         android:enabled="true"
+        android:onClick="Register"
         android:text="Регистрация"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"

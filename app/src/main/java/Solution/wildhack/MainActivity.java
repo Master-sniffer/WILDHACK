@@ -31,6 +31,18 @@ public class MainActivity extends AppCompatActivity {
 
     public void Vhod_On_Boarding(View view){
 
+//        boolean connected = false;
+//        ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+//        if(connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+//                connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+//            //we are connected to a network
+//            connected = true;
+//        }
+//        else{
+//            connected = false;}
+//
+//        System.out.println(connected);
+
         Intent intent = new Intent(this, Enter_Or_Logi.class);
         startActivity(intent);
     }
