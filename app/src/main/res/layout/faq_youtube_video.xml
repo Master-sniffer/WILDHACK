@@ -28,7 +28,7 @@
 
 
         <EditText
-            android:id="@+id/search"
+            android:id="@+id/search_internet_faq"
             android:layout_width="400dp"
             android:layout_height="36dp"
             android:layout_marginLeft="16dp"
@@ -38,7 +38,8 @@
             android:ems="100"
             android:hint="Как подать заявку?"
             android:inputType="text"
-            android:textColor="#999999" />
+            android:textColor="#999999"
+            />
 
         <TextView
             android:id="@+id/covid"
