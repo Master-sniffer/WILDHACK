@@ -44,7 +44,7 @@ public class Answer_App extends AppCompatActivity {
                 @Override
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                     WelcomeScreen.EXTRA_MESSAGE = Look_For(editText.getText().toString());
-                    Change(EXTRA_MESSAGE);
+                    Change(WelcomeScreen.EXTRA_MESSAGE);
                     return true;
                 }
             });

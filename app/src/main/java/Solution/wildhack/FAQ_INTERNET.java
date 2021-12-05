@@ -15,7 +15,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class FAQ_INTERNET extends AppCompatActivity {
 
-    public static String[] EXTRA_MESSAGE;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +28,8 @@ public class FAQ_INTERNET extends AppCompatActivity {
             editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 @Override
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                    EXTRA_MESSAGE = Look_For(editText.getText().toString());
-                    Change(EXTRA_MESSAGE);
+                    WelcomeScreen.EXTRA_MESSAGE = Look_For(editText.getText().toString());
+                    Change(WelcomeScreen.EXTRA_MESSAGE);
                     return true;
                 }
             });

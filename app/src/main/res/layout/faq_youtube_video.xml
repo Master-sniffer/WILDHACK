@@ -38,8 +38,7 @@
             android:ems="100"
             android:hint="Как подать заявку?"
             android:inputType="text"
-            android:textColor="#999999"
-            />
+            android:textColor="#999999" />
 
         <TextView
             android:id="@+id/covid"
