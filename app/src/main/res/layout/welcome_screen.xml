@@ -5,7 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".WelcomeScreen">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -45,7 +45,8 @@
             android:ems="100"
             android:inputType="text"
             android:text="Заметки, руководства..."
-            android:textColor="#999999" />
+            android:textColor="#999999"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
         <ImageView
             android:id="@+id/imageView7"

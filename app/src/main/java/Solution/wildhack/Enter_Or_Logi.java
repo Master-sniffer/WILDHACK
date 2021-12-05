@@ -16,7 +16,7 @@ public class Enter_Or_Logi extends AppCompatActivity {
 
 
     public void Register (View view){
-        Intent intent = new Intent(this, Enter_Or_Logi.class);
+        Intent intent = new Intent(this, WelcomeScreen.class);
         startActivity(intent);
     }
 
