@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Fillform">
 
     <ImageView
         android:id="@+id/imageView9"
@@ -39,7 +39,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="Send_And_Return"/>
 
     <Button
         android:id="@+id/button7"
@@ -48,7 +49,8 @@
         android:backgroundTint="#0078FF"
         android:text="В начало"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="37dp" />
+        tools:layout_editor_absoluteY="37dp"
+        android:onClick="return_to_welcome_again"/>
 
     <EditText
         android:id="@+id/editTextTextMultiLine2"
