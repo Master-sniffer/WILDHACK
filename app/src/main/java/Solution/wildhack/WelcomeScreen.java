@@ -27,18 +27,29 @@ public class WelcomeScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome_screen);
 
-        EditText editText = (EditText) findViewById(R.id.search_Wel);
 
-        editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                EXTRA_MESSAGE = Look_For(editText.getText().toString());
-                Change(EXTRA_MESSAGE);
-                return true;
-            }
-        });
+        try {
+            EditText editText = (EditText) findViewById(R.id.search_Wel);
+
+            editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+                @Override
+                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                    EXTRA_MESSAGE = Look_For(editText.getText().toString());
+                    Change(EXTRA_MESSAGE);
+                    return true;
+                }
+            });
+        } catch (Exception e){
+            Log.i("Exception", String.valueOf(e));
+        }
+
     }
 
+    public void start_filling_form(View view){
+        Intent intent = new Intent(this, SelectOne.class);
+
+        startActivity(intent);
+    }
 
     public void Change(String[] output) {
         Intent intent = new Intent(this, Answer_App.class);

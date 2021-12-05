@@ -18,6 +18,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="142dp"
             android:layout_marginRight="16dp"
+            android:clickable="true"
+            android:onClick="start_filling_form"
             app:srcCompat="@drawable/resource__" />
 
         <TextView
