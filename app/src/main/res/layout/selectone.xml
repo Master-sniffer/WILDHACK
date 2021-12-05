@@ -88,18 +88,6 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/answerfound1"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:text="Назад"
-        android:textColor="@color/back"
-        android:textSize="14dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="55dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
         android:id="@+id/answer"
         android:layout_width="230dp"
         android:layout_height="150dp"
@@ -148,5 +136,14 @@
         tools:layout_editor_absoluteX="73dp"
         tools:layout_editor_absoluteY="166dp"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0078FF"
+        android:text="Назад"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="37dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
