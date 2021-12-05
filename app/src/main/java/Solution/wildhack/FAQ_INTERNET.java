@@ -24,7 +24,7 @@ public class FAQ_INTERNET extends AppCompatActivity {
 
 
         try {
-            EditText editText = (EditText) findViewById(R.id.search_Wel);
+            EditText editText = (EditText) findViewById(R.id.search_internet_faq);
 
             editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 @Override

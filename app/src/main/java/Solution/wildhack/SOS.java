@@ -21,7 +21,7 @@ public class SOS extends AppCompatActivity {
 
 
         try {
-            EditText editText = (EditText) findViewById(R.id.search_Wel);
+            EditText editText = (EditText) findViewById(R.id.search_sos);
 
             editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 @Override
@@ -43,7 +43,5 @@ public class SOS extends AppCompatActivity {
         Intent intent = new Intent(this, Answer_App.class);
         startActivity(intent);
     }
-
-
 
 }
