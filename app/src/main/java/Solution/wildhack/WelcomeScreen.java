@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class WelcomeScreen extends AppCompatActivity {
 
-    Button Dle_Vas_Wel, Zametki_Wel, FAQ_Wel,  SOS_Wel , Eshe_Wel;
+    Button Dle_Vas_Wel, Zametki_Wel, FAQ_Wel, SOS_Wel, Eshe_Wel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,51 +34,52 @@ public class WelcomeScreen extends AppCompatActivity {
         });
     }
 
-    public void zametki_wel (View view){
+    public void zametki_wel(View view) {
         Intent intent = new Intent(this, Enter_Or_Logi.class);
         startActivity(intent);
     }
 
-    public void faq_wel (View view){
+    public void faq_wel(View view) {
         boolean connected = false;
-        ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
-        if(connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
             //we are connected to a network
             connected = true;
+        } else {
+            connected = false;
         }
-        else{
-            connected = false;}
 
 
         Log.i("Connection", String.valueOf(connected));
 
-        if (connected==true){
+        if (connected == true) {
             Intent intent = new Intent(this, FAQ_INTERNET.class);
             startActivity(intent);
         } else {
-        Intent intent = new Intent(this, FAQ_OFFLINE.class);
-        startActivity(intent); }
+            Intent intent = new Intent(this, FAQ_OFFLINE.class);
+            startActivity(intent);
+        }
     }
 
-    public void sos_wel (View view){
+    public void sos_wel(View view) {
         Intent intent = new Intent(this, Enter_Or_Logi.class);
         startActivity(intent);
     }
 
-    public void eshe_wel (View view){
+    public void eshe_wel(View view) {
         Intent intent = new Intent(this, Enter_Or_Logi.class);
         startActivity(intent);
     }
 
 
-    public void Change (){
+    public void Change() {
 //        Intent intent = new Intent(this, Enter_Or_Logi.class);
 //        startActivity(intent);
     }
 
 
+    public void main() {
 
-
-
+    }
 }
