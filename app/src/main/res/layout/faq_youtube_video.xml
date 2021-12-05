@@ -9,7 +9,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/textView2"
@@ -21,8 +23,8 @@
             android:height="50dp"
             android:text="FAQ"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="34dp" />
+            android:textSize="34dp"
+            android:textStyle="bold" />
 
 
         <EditText
@@ -52,63 +54,63 @@
 
         <TextView
             android:id="@+id/web"
-            android:background="#dedede"
-            android:textColor="#999999"
             android:layout_width="80dp"
             android:layout_height="36dp"
             android:layout_marginLeft="106dp"
             android:layout_marginTop="172dp"
+            android:background="#dedede"
             android:gravity="center"
+            android:text="Интернет"
             android:textAlignment="center"
-            android:text="Интернет" />
+            android:textColor="#999999" />
 
         <TextView
             android:id="@+id/howtofind"
-            android:background="#dedede"
-            android:textColor="#999999"
             android:layout_width="200dp"
             android:layout_height="36dp"
             android:layout_marginLeft="196dp"
             android:layout_marginTop="172dp"
+            android:background="#dedede"
             android:gravity="center"
+            android:text="Как добраться до Камчатки"
             android:textAlignment="center"
-            android:text="Как добраться до Камчатки" />
+            android:textColor="#999999" />
 
         <TextView
             android:id="@+id/answerfound"
-            android:textColor="#999999"
             android:layout_width="300dp"
             android:layout_height="36dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="455dp"
-            android:textSize="14dp"
-            android:text="Фильм Юрия Дудя" />
+            android:text="Фильм Юрия Дудя"
+            android:textColor="#999999"
+            android:textSize="14dp" />
 
         <TextView
             android:id="@+id/answer"
-            android:textColor="#000000"
             android:layout_width="500dp"
             android:layout_height="150dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="435dp"
+            android:layout_marginRight="20dp"
+            android:text="Главное о Камчатке"
+            android:textColor="#000000"
             android:textSize="16dp"
-            android:textStyle="bold"
-            android:text="Главное о Камчатке" />
+            android:textStyle="bold" />
 
 
         <TextView
             android:id="@+id/headline"
-            android:textColor="#000000"
             android:layout_width="500dp"
             android:layout_height="150dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="484dp"
+            android:layout_marginRight="20dp"
+            android:text="Подборка популярных руководств >"
+            android:textColor="#000000"
             android:textSize="20dp"
-            android:textStyle="bold"
 
-            android:text="Подборка популярных руководств >" />
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -126,8 +128,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="515dp"
+            android:layout_marginRight="20dp"
             app:srcCompat="@drawable/kin_li_xvp14wwqz9s_unsplash" />
 
         <ImageView
@@ -141,28 +143,87 @@
 
         <TextView
             android:id="@+id/lifehack1"
-            android:textColor="#FFFFFF"
             android:layout_width="120dp"
             android:layout_height="200dp"
             android:layout_marginLeft="43dp"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="515dp"
+            android:layout_marginRight="20dp"
             android:gravity="center"
+            android:text="Самые необходимые вещи"
+            android:textColor="#FFFFFF"
             android:textSize="16dp"
-            android:textStyle="bold"
-            android:text="Самые необходимые вещи" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/lifehack2"
-            android:textColor="#000000"
             android:layout_width="140dp"
             android:layout_height="200dp"
             android:layout_marginLeft="236dp"
             android:layout_marginTop="515dp"
             android:gravity="center"
+            android:text="Как правильно фотографировать животных для отчёта"
+            android:textColor="#000000"
             android:textSize="16dp"
-            android:textStyle="bold"
-            android:text="Как правильно фотографировать животных для отчёта" />
+            android:textStyle="bold" />
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar4"
+            style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="-2dp"
+            android:backgroundTint="#D8D8D8" />
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="333dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/foryouicon" />
+
+        <ImageButton
+            android:id="@+id/imageButton18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="172dp"
+            android:layout_marginBottom="-3dp"
+            android:src="@drawable/faqicon" />
+
+        <ImageButton
+            android:id="@+id/imageButton19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="93dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/sosicon" />
+
+        <ImageButton
+            android:id="@+id/imageButton16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="253dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/notesicon" />
+
+        <ImageButton
+            android:id="@+id/imageButton17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/moreicon" />
 
     </RelativeLayout>
 

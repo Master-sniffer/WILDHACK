@@ -100,13 +100,25 @@
             android:src="@drawable/moreicon" />
 
         <Button
+            android:id="@+id/button6"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="145dp"
+            android:backgroundTint="#000000"
+            android:text="О приложении" />
+
+        <Button
             android:id="@+id/button2"
             android:layout_width="374dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="19dp"
-            android:layout_marginBottom="473dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="271dp"
+            android:backgroundTint="#000000"
             android:text="Настройки приложения" />
 
         <Button
@@ -115,19 +127,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="19dp"
-            android:layout_marginBottom="411dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="209dp"
+            android:backgroundTint="#000000"
             android:text="Поделиться приложением" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="374dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="19dp"
-            android:layout_marginBottom="347dp"
-            android:text="О приложении" />
 
 
     </RelativeLayout>
