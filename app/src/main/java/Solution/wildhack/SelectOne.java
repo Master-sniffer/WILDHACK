@@ -15,7 +15,7 @@ public class SelectOne extends AppCompatActivity {
     }
 
     public void Podat_Zaiavku (View view){
-        Intent intent = new Intent(this, WelcomeScreen.class);
+        Intent intent = new Intent(this, Fillform.class);
         startActivity(intent);
     }
 
