@@ -89,7 +89,7 @@ public class WelcomeScreen extends AppCompatActivity {
     }
 
     public void sos_wel(View view) {
-        Intent intent = new Intent(this, Enter_Or_Logi.class);
+        Intent intent = new Intent(this, SOS.class);
         startActivity(intent);
     }
 
