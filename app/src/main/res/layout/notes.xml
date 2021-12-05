@@ -18,8 +18,11 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="92dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="195dp"
             android:width="200dp"
             android:height="50dp"
             android:text="Заметки"
@@ -29,10 +32,13 @@
 
         <EditText
             android:id="@+id/search"
-            android:layout_width="400dp"
-            android:layout_height="36dp"
+            android:layout_width="370dp"
+            android:layout_height="38dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="146dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="26dp"
             android:layout_marginRight="16dp"
             android:background="#dedede"
             android:ems="100"
@@ -100,15 +106,15 @@
             android:src="@drawable/moreicon" />
 
         <ImageButton
-            android:id="@+id/imageButton6"
+            android:id="@+id/imageButton8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="206dp"
-            android:layout_marginBottom="324dp"
+            android:layout_marginEnd="207dp"
+            android:layout_marginBottom="60dp"
             android:backgroundTint="#FFFFFF"
-            android:src="@drawable/addnote" />
+            android:src="@drawable/note3" />
 
         <ImageButton
             android:id="@+id/imageButton7"
@@ -116,21 +122,21 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="324dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="284dp"
             android:backgroundTint="#FFFFFF"
             android:src="@drawable/note6" />
 
         <ImageButton
-            android:id="@+id/imageButton8"
+            android:id="@+id/imageButton6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="206dp"
-            android:layout_marginBottom="100dp"
+            android:layout_marginEnd="207dp"
+            android:layout_marginBottom="284dp"
             android:backgroundTint="#FFFFFF"
-            android:src="@drawable/note3" />
+            android:src="@drawable/addnote" />
 
         <ImageButton
             android:id="@+id/imageButton9"
@@ -138,8 +144,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="13dp"
-            android:layout_marginBottom="99dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="59dp"
             android:backgroundTint="#FFFFFF"
             android:src="@drawable/note5" />
 

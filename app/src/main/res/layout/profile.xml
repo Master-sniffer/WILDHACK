@@ -13,32 +13,6 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="92dp"
-            android:width="200dp"
-            android:height="50dp"
-            android:text="Профиль"
-            android:textColor="@color/black"
-            android:textSize="34dp"
-            android:textStyle="bold" />
-
-
-        <EditText
-            android:id="@+id/search"
-            android:layout_width="400dp"
-            android:layout_height="36dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="146dp"
-            android:layout_marginRight="16dp"
-            android:background="#dedede"
-            android:ems="100"
-            android:hint="Интернет на Камчатке"
-            android:inputType="text"
-            android:textColor="#000000" />
 
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/bottomAppBar3"
@@ -48,6 +22,17 @@
             android:layout_alignParentBottom="true"
             android:layout_gravity="bottom"
             android:backgroundTint="#D8D8D8" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="236dp"
+            android:layout_height="94dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-55dp"
+            android:layout_marginBottom="481dp"
+            android:text="Александр Анисин"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <ImageButton
             android:id="@+id/imageButton12"
@@ -100,15 +85,69 @@
             android:src="@drawable/moreicon" />
 
         <Button
+            android:id="@+id/button9"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="251dp"
+            android:backgroundTint="#000000"
+            android:text="Помощь и обратная связь" />
+
+        <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="17dp"
-            android:layout_marginBottom="597dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="132dp"
             android:backgroundTint="#2196F3"
             android:text="Назад" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="369dp"
+            android:backgroundTint="#000000"
+            android:text="Мои данные" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="308dp"
+            android:backgroundTint="#000000"
+            android:text="Сменить учетные данные" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="191dp"
+            android:backgroundTint="#000000"
+            android:text="Политика конфиденциальности" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="183dp"
+            android:layout_marginBottom="446dp"
+            app:srcCompat="@drawable/notbitmap" />
 
 
     </RelativeLayout>
