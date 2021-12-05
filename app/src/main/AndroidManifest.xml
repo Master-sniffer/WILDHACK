@@ -31,6 +31,9 @@
             android:name=".Enter_Or_Logi"
             android:exported="false" />
         <activity
+            android:name=".Fillform"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
